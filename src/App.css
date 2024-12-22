@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+  --text-color: #fff;
+  --nav-link-padding: 1rem;
+  --font-family-body: "Libre Baskerville", serif;
+  --font-family-headings: "Fjalla One", serif;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-family-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--secondary) !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--secondary) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+}
+
+p {
+  font-family: var(--font-family-body);
+  margin: 10px 0;
+}
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.puublication-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.vertical-timeline-element-date {
+  font-size: 1.5em;
+  font-weight: bolder !important;
+  color: var(--text-color);
+  opacity: 100% !important;
+}
+
+.hero-img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.calendar-container {
+  color: var(--secondary);
+}
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__label,
+.react-calendar__tile {
+  color: var(--secondary);
+}
+
+.navbar-brand {
+  font-size: 1.5em !important;
+  font-weight: 700;
+  border-bottom: 3px solid var(--primary);
+}
+
+.mobile-body {
+  background: var(--secondary);
+}
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  color: var(--text-color);
+  border-radius: 4px;
+}
+header nav a.active {
+  background: var(--primary);
+}
+
+.custom-toggle {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.card .img-fluid {
+  max-width: 400px;
+  height: 200px;
+}
+
+.navbar-toggler {
+  border-color: #fff !important;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.card .card-title {
+  font-size: 1.2rem;
+}
+
+.card .award-text {
+  font-size: 0.9rem;
+}
+
+.card .award-date {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .card .img-fluid {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .hero-container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .hero-container p {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    padding: 1em;
+    object-fit: cover;
+  }
+
+  .card .card-title {
+    font-size: 1rem;
+  }
+
+  .card .award-text {
+    font-size: 0.7rem;
+  }
+
+  .card .award-date {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card .card-title {
+    font-size: 0.7rem;
+  }
+  .card .img-fluid {
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .card .award-text,
+  .card .award-date {
+    font-size: 0.4rem;
+  }
+
+  .hero-container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .hero-container p {
+    text-align: center;
+  }
+}
