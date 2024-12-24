@@ -7,9 +7,8 @@ export default function Publication({ publication }) {
 
   return (
     <div className='publication'>
-      <h3>{publication.journal}</h3>
-      <p>{publication.title}</p>
-      
+      <h3 className='publication-title'>{publication.journal}</h3>
+      <p className='publication-text'>{publication.title}</p>
     </div>
   );
 }

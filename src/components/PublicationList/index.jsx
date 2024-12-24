@@ -39,7 +39,7 @@ const PublicationList = ({ numberOfPublications }) => {
       <Row xs={1} md={2} lg={3} className='g-4'>
         {publicationsToDisplay.map((publication) => (
           <Col key={publication._id}>
-            <Card>
+            <Card className='m-4'>
               <Card.Body>
                 <Publication publication={publication} />
                 <Link
